@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자바스크립트 연습문제2</title>
+</head>
+<body>
+    <h1>자기소개</h1>
+    <textarea id="intro" rows="5" cols="50" placeholder="50자 이내만 입력가능"></textarea>
+    <button onclick="introCheck()">글자수 확인</button>
+
+    <!--위 자기소개 란에 글을 입력한 후 글자수 확인 버튼 클릭 시
+        50자 이상이면 "자기소개란은 50자 이내만 입력 가능합니다."라는
+        경고창을 출력하시오
+    -->
+
+    <script>
+       function introCheck() {
+            const str = document.getElementById("intro").value;
+
+            if (str.length >= 50) {
+                isValid = false;
+                alert("자기소개란은 50자 이내만 입력 가능합니다.");
+            } 
+        }
+        
+
+
+    </script>
+
+</body>
+</html>
